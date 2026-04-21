@@ -42,3 +42,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+function openTicketModal() {
+    document.getElementById("ticketModal").classList.remove("hidden");
+}
+
+function closeTicketModal() {
+    document.getElementById("ticketModal").classList.add("hidden");
+}
