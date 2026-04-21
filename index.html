@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haunted Heroines — Gothic Women in 1940s Hollywood</title>
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="A curated film retrospective exploring the 1940s Hollywood Gothic cycle and the evolution of the haunted heroine.">
+    
+    <!-- Tailwind CSS (for quick layout structure) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cinzel: ['"Cinzel Decorative"', 'serif'],
+                        playfair: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="selection:bg-white selection:text-black">
+    <div class="grain-overlay"></div>
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+        <div id="hero-bg" class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-black/40 to-black z-10"></div>
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/2014_Ziarno_na_fotografii_analogowej.jpg/960px-2014_Ziarno_na_fotografii_analogowej.jpg" 
+                alt="Gothic Background"
+                class="w-full h-full object-cover grayscale brightness-50"
+            >
+        </div>
+
+        <div class="fog-layer opacity-30"></div>
+        <div class="fog-layer opacity-20" style="animation-direction: reverse; animation-duration: 25s;"></div>
+
+        <div class="relative z-20 text-center px-6 max-w-4xl">
+            <div class="reveal active">
+                <h1 class="font-cinzel text-5xl md:text-8xl tracking-[0.2em] mb-4 leading-tight">HAUNTED HEROINES</h1>
+                <p class="font-sans text-sm md:text-lg tracking-[0.4em] uppercase text-gray-400 mb-12">Gothic Women in 1940s Hollywood</p>
+                <div class="h-px w-24 bg-white/30 mx-auto mb-8"></div>
+                <p class="font-playfair italic text-lg md:text-xl text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                    A curated selection of five films exploring fear, memory, and female subjectivity
+                </p>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-white/30 text-xs tracking-widest uppercase" style="animation: scrollMove 2s infinite">
+            Scroll
+        </div>
+    </section>
+
+    <!-- SECTION 2: HOOK -->
+    <section class="py-40 px-6 flex items-center justify-center bg-black">
+        <div class="text-center space-y-8 max-w-3xl reveal-group">
+            <p class="font-playfair text-2xl md:text-4xl italic text-gray-200 leading-relaxed stagger-item">There is always a house.</p>
+            <p class="font-playfair text-2xl md:text-4xl italic text-gray-200 leading-relaxed stagger-item">A corridor in shadow.</p>
+            <p class="font-playfair text-2xl md:text-4xl italic text-gray-200 leading-relaxed stagger-item">A door that should remain closed.</p>
+            <p class="font-playfair text-2xl md:text-4xl italic text-gray-200 leading-relaxed stagger-item">A presence that lingers.</p>
+            <p class="font-playfair text-2xl md:text-4xl italic text-gray-200 leading-relaxed stagger-item">And within it—a woman.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: ABOUT -->
+    <section class="py-40 px-6 md:px-20 bg-black border-y border-white/5">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+            <div class="md:col-span-4 reveal-left">
+                <h2 class="font-sans text-xs tracking-[0.5em] uppercase text-gray-500 md:sticky md:top-10">ABOUT THE PROGRAMME</h2>
+            </div>
+            <div class="md:col-span-8 space-y-8 reveal">
+                <p class="font-sans text-xl md:text-2xl font-light leading-relaxed text-gray-300">
+                    Haunted Heroines explores a cycle of Hollywood films produced between 1939 and 1946, a period shaped by war, uncertainty, and a renewed fascination with the past. Drawing on 19th-century Gothic literature, these films reimagine distant settings—moors, mansions, and shadowed interiors—not simply as historical backdrops, but as spaces charged with memory, secrecy, and unease.
+                </p>
+                <p class="font-sans text-lg md:text-xl font-light leading-relaxed text-gray-400">
+                    Within these environments, what appears to be safe—home, marriage, or intimacy—gradually reveals itself as something more controlling and unstable. From the windswept longing of Wuthering Heights to the oppressive domestic spaces of Rebecca and Jane Eyre, the house becomes a site where identity is shaped and constrained. In Gaslight, this control turns psychological, while The Spiral Staircase pushes it toward fear and vulnerability.
+                </p>
+                <p class="font-sans text-lg md:text-xl font-light leading-relaxed text-gray-400">
+                    Across these films, the heroine does not simply encounter danger—she enters a system that defines, silences, and contains her.
+                </p>
+                <p class="font-sans text-lg md:text-xl font-light leading-relaxed text-gray-400">
+                    These women are not only haunted by the past.<br>
+                    <span class="text-white">They are caught within it.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: PROGRAMME LIST -->
+    <section id="programme" class="py-40 px-6 bg-black">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="font-sans text-xs tracking-[0.5em] uppercase text-gray-500 mb-20 reveal">PROGRAMME</h2>
+            <div class="flex flex-wrap justify-center gap-x-12 gap-y-8 mb-24 reveal-group">
+                <div class="group relative stagger-item">
+                    <a href="#wuthering" class="font-cinzel text-xl md:text-3xl tracking-wider text-gray-400 group-hover:text-white transition-colors duration-500 block py-2">Wuthering Heights</a>
+                    <div class="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="group relative stagger-item">
+                    <a href="#rebecca" class="font-cinzel text-xl md:text-3xl tracking-wider text-gray-400 group-hover:text-white transition-colors duration-500 block py-2">Rebecca</a>
+                    <div class="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="group relative stagger-item">
+                    <a href="#janeeyre" class="font-cinzel text-xl md:text-3xl tracking-wider text-gray-400 group-hover:text-white transition-colors duration-500 block py-2">Jane Eyre</a>
+                    <div class="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="group relative stagger-item">
+                    <a href="#gaslight" class="font-cinzel text-xl md:text-3xl tracking-wider text-gray-400 group-hover:text-white transition-colors duration-500 block py-2">Gaslight</a>
+                    <div class="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></div>
+                </div>
+                <div class="group relative stagger-item">
+                    <a href="#spiral" class="font-cinzel text-xl md:text-3xl tracking-wider text-gray-400 group-hover:text-white transition-colors duration-500 block py-2">The Spiral Staircase</a>
+                    <div class="absolute bottom-0 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-500"></div>
+                </div>
+            </div>
+
+            <a href="#wuthering" class="group inline-flex items-center gap-4 font-sans text-sm tracking-[0.3em] uppercase text-gray-400 hover:text-white transition-colors reveal">
+                Explore the films
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 animate-arrow"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECTION 5: TRANSITION -->
+    <section class="py-60 px-6 flex items-center justify-center bg-black relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="text-center z-10 reveal">
+            <p class="font-playfair text-3xl md:text-5xl italic text-gray-300 tracking-tight leading-tight">
+                "Five women. Five houses. <br class="hidden md:block"> Five ways of being haunted."
+            </p>
+        </div>
+    </section>
+
+    <!-- FILM DETAILS -->
+    <div id="film-details">
+        <!-- Wuthering Heights -->
+        <section id="wuthering" class="py-40 px-6 md:px-20 bg-black border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative aspect-[4/5] overflow-hidden group reveal-left">
+                        <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-700"></div>
+                        <img src="images/wuthering-heights.jpg" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-1000">
+                    </div>
+                    <div class="space-y-12 reveal">
+                        <div class="space-y-4">
+                            <h3 class="font-cinzel text-4xl md:text-6xl tracking-[0.1em] text-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.1)] uppercase">Wuthering Heights</h3>
+                            <div class="h-px w-24 bg-white/10"></div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">PLOT</h4>
+                                <p class="font-sans text-lg md:text-xl font-light text-gray-300 leading-relaxed">On the Yorkshire moors, Catherine and Heathcliff’s love endures beyond death, binding landscape, memory, and desire into a single haunting.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">WHY THIS FILM</h4>
+                                <p class="font-playfair italic text-xl md:text-2xl text-gray-400 leading-[1.8] whitespace-pre-line">The Gothic begins here—as atmosphere and emotion. Love becomes obsession. The past refuses to remain past.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rebecca -->
+        <section id="rebecca" class="py-40 px-6 md:px-20 bg-black border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center lg:flex-row-reverse">
+                    <div class="relative aspect-[4/5] overflow-hidden group reveal-right lg:order-2">
+                        <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-700"></div>
+                        <img src="images/rebecca.jpg" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-1000">
+                    </div>
+                    <div class="space-y-12 reveal">
+                        <div class="space-y-4">
+                            <h3 class="font-cinzel text-4xl md:text-6xl tracking-[0.1em] text-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.1)] uppercase">Rebecca</h3>
+                            <div class="h-px w-24 bg-white/10"></div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">PLOT</h4>
+                                <p class="font-sans text-lg md:text-xl font-light text-gray-300 leading-relaxed">A young bride arrives at Manderley, only to find herself overshadowed by the memory of her husband’s first wife.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">WHY THIS FILM</h4>
+                                <p class="font-playfair italic text-xl md:text-2xl text-gray-400 leading-[1.8] whitespace-pre-line">A house can remember. A name can disappear. The heroine is defined by absence—and begins to resist it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jane Eyre -->
+        <section id="janeeyre" class="py-40 px-6 md:px-20 bg-black border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative aspect-[4/5] overflow-hidden group reveal-left">
+                        <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-700"></div>
+                        <img src="images/jane-eyre.png" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-1000">
+                    </div>
+                    <div class="space-y-12 reveal">
+                        <div class="space-y-4">
+                            <h3 class="font-cinzel text-4xl md:text-6xl tracking-[0.1em] text-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.1)] uppercase">Jane Eyre</h3>
+                            <div class="h-px w-24 bg-white/10"></div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">PLOT</h4>
+                                <p class="font-sans text-lg md:text-xl font-light text-gray-300 leading-relaxed">A governess forms a bond with her employer, while a hidden secret within the house threatens to undo everything.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">WHY THIS FILM</h4>
+                                <p class="font-playfair italic text-xl md:text-2xl text-gray-400 leading-[1.8] whitespace-pre-line">Here, the heroine speaks. Moral clarity replaces uncertainty. The Gothic becomes a space of confrontation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gaslight -->
+        <section id="gaslight" class="py-40 px-6 md:px-20 bg-black border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center lg:flex-row-reverse">
+                    <div class="relative aspect-[4/5] overflow-hidden group reveal-right lg:order-2">
+                        <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-700"></div>
+                        <img src="images/gaslight.jpg" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-1000">
+                    </div>
+                    <div class="space-y-12 reveal">
+                        <div class="space-y-4">
+                            <h3 class="font-cinzel text-4xl md:text-6xl tracking-[0.1em] text-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.1)] uppercase">Gaslight</h3>
+                            <div class="h-px w-24 bg-white/10"></div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">PLOT</h4>
+                                <p class="font-sans text-lg md:text-xl font-light text-gray-300 leading-relaxed">A woman begins to doubt her sanity as her husband manipulates her perception of reality.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">WHY THIS FILM</h4>
+                                <p class="font-playfair italic text-xl md:text-2xl text-gray-400 leading-[1.8] whitespace-pre-line">The horror is not supernatural. It is psychological. To question reality is to lose control—to reclaim it is to survive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Spiral Staircase -->
+        <section id="spiral" class="py-40 px-6 md:px-20 bg-black border-t border-white/5 overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="relative aspect-[4/5] overflow-hidden group reveal-left">
+                        <div class="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-700"></div>
+                        <img src="images/spiral-staircase.jpg" class="w-full h-full object-cover grayscale brightness-75 group-hover:scale-105 transition-transform duration-1000">
+                    </div>
+                    <div class="space-y-12 reveal">
+                        <div class="space-y-4">
+                            <h3 class="font-cinzel text-4xl md:text-6xl tracking-[0.1em] text-white drop-shadow-[0_4px_12px_rgba(255,255,255,0.1)] uppercase">The Spiral Staircase</h3>
+                            <div class="h-px w-24 bg-white/10"></div>
+                        </div>
+                        <div class="space-y-8">
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">PLOT</h4>
+                                <p class="font-sans text-lg md:text-xl font-light text-gray-300 leading-relaxed">In a storm-bound mansion, a mute woman is targeted by a killer who preys on vulnerability.</p>
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-500">WHY THIS FILM</h4>
+                                <p class="font-playfair italic text-xl md:text-2xl text-gray-400 leading-[1.8] whitespace-pre-line">Silence becomes danger. The gaze becomes violence. The Gothic reaches its most extreme form: to be unseen is to be at risk.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CLOSING SECTION -->
+    <section class="py-60 px-6 bg-black border-t border-white/5 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center space-y-24">
+            <div class="reveal space-y-8">
+                <p class="font-playfair text-2xl md:text-4xl italic text-gray-300 leading-relaxed">
+                    Across these films, the Gothic heroine changes—<br>
+                    from haunted to aware, from passive to resistant.
+                </p>
+            </div>
+            <div class="reveal space-y-4">
+                <p class="font-sans text-xs tracking-[0.8em] uppercase text-gray-500">What remains is the question:</p>
+                <h2 class="font-cinzel text-4xl md:text-6xl tracking-[0.2em] text-white">WHO CONTROLS WHAT IS REAL?</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/5 text-center">
+        <p class="font-sans text-[10px] tracking-[0.5em] uppercase text-gray-600">
+            © 1946 CINEMATIC ARCHIVE — GOTHIC HOLLYWOOD RETROSPECTIVE
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
