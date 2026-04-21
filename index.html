@@ -348,5 +348,22 @@ class="border border-white px-6 py-3 text-sm tracking-widest uppercase hover:bg-
 
     <!-- Scripts -->
     <script src="script.js"></script>
+        <div id="ticketModal" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50 hidden">
+    <div class="bg-black border border-white/20 p-10 max-w-md text-center space-y-6">
+        
+        <h3 class="font-cinzel text-2xl tracking-widest">SCREENINGS FULL</h3>
+        
+        <p class="text-gray-400 text-sm leading-relaxed">
+            This retrospective is currently fully booked.<br>
+            Thank you for your interest.
+        </p>
+
+        <button onclick="closeTicketModal()" 
+        class="border border-white px-6 py-2 text-xs tracking-widest uppercase hover:bg-white hover:text-black transition">
+            Close
+        </button>
+
+    </div>
+</div>
 </body>
 </html>
